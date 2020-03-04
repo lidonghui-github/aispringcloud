@@ -10,13 +10,9 @@ spring:
           uri: https://github.com/lidonghui-github/aispringcloud.git
           searchPaths: config
           username: lidonghui-github
-          passphrase: ab2010678720
+          password: ab2010678720
       label: master
-
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-  instance:
-      prefer-ip-address: true
-      instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
