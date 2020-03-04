@@ -11,8 +11,12 @@ spring:
           search-paths: config
           username: lidonghui-github
           password: ab2010678720
+        bootstrap: true
       label: master
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+  instance:
+      prefer-ip-address: true
+      instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
