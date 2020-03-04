@@ -8,7 +8,7 @@ spring:
       server:
         git:
           uri: https://github.com/lidonghui-github/aispringcloud.git
-          searchPaths: config
+          search-paths: config
           username: lidonghui-github
           password: ab2010678720
       label: master
